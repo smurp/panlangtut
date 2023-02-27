@@ -23,8 +23,8 @@ public class Person {
 
   // in Java it is typical to put the Constructor up at the top of the class
   public Person(String fn) { // this is the "Constructor" method, which gets called like this: new Person("Sydney");
-    this.firstName = fn;
-    population++; // every time init() is called we should increment the population on the class itself
+    this.firstName = fn;  // using this. is optional
+    population++; // every time a Person is constructed we increment the population on the class itself
   }
 
   // These are the "Class Methods", distinguished by having the "static" keyword
